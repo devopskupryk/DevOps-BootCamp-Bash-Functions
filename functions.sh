@@ -18,16 +18,16 @@ function shortest() {
         done
     done
     #echo ${args[*]}
-    result="${args[0]}\n"
+    result="${args[0]}"
     for ((i=0;i<$#;i++)); do
         if ((${#args[i+1]}==${#args[0]})); then
-            result="$result${args[i+1]}\n"
+            result="$result\n${args[i+1]}"
         fi        
     done
     echo -e $result
 }
 
 print_log() {
-    result="[$(date +%Y)-$(date +%m)-$(date +%d) $(date +%H):$(date +%M)] $1"
+    result="[$(date +%Y)-$(date +%m)-$(date +%d) $(date +%H):$(date +%M)] $*"
     echo $result
 }
