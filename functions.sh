@@ -2,6 +2,7 @@
 
 function pow () {
     result=$(($1**$2))
+    echo $result
 }
 
 function shortest () {
@@ -23,8 +24,10 @@ function shortest () {
             result="$result${args[i+1]}\n"
         fi        
     done
+    echo $result
 }
 
 print_log() {
     result="[$(date +%Y)-$(date +%m)-$(date +%d) $(date +%H):$(date +%M)] $1"
+    echo $result
 }
