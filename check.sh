@@ -13,16 +13,16 @@ source ./functions.sh
  pow 10 5
 # echo $result
 
- shortest "Java" "Bash" "Python"
-# echo -e $result 
- shortest "Oh" "this" "is" "a" "test" "!"
-# echo -e $result
  shortest "This" "is" "Bash" "Functions" "Task"
-# echo -e $result
- shortest "1" "2" "42"
 # echo -e $result
  shortest "Test" "is" "short" "do"
 # echo -e $result
+ shortest "Java" "Bash" "Python"
+# echo -e $result
+ shortest "1" "2" "42"
+# echo -e $result 
+ shortest "Oh" "this" "is" "a" "test" "!"
+# echo -e $result
 
-#print_log "Hello World!"
+print_log "Hello World!"
 #echo -e $result

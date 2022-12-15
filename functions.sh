@@ -24,7 +24,7 @@ function shortest () {
             result="$result${args[i+1]}\n"
         fi        
     done
-    echo $result
+    echo -e $result
 }
 
 print_log() {
