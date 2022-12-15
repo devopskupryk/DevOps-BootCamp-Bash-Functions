@@ -1,11 +1,11 @@
 #!/bin/bash
 
-function pow () {
+function pow() {
     result=$(($1**$2))
     echo $result
 }
 
-function shortest () {
+function shortest() {
     args=($*)
     #echo ${args[*]}
     for ((i=1;i<$#;i++)); do
